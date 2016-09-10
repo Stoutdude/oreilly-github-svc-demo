@@ -24,4 +24,8 @@ describe('hackerCase', function() {
   it('must not break on an empty string', function() {
     expect(hackerCase('')).to.equal('');
   });
+
+  it('should use every replacement in the map, if any', function(){
+    expect(hackerCase('ron weasley', {A: 4, E: 3, S: 5})).to.equal('RoN w345l3y');
+  });
 });
