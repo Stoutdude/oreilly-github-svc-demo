@@ -9,7 +9,9 @@ module.exports = function hackerCase(text, replaceMap) {
 
   if ('object' === typeof replaceMap) {
     for (var src in replaceMap) {
-      result = result.replace(new RegExp(src, 'gi'), String(replaceMap[src]));
+      if (replaceMap.hasOwnProperty(src)){
+        result = result.replace(new RegExp(src, 'gi'), String(replaceMap[src]));
+      }
     }
   }
 
