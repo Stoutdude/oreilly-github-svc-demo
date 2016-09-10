@@ -7,7 +7,7 @@ module.exports = function hackerCase(text, replaceMap) {
     return char[(upperCase = !upperCase) ? 'toLocaleUpperCase' : 'toLocaleLowerCase']();
   });
 
-  if ('object' === typof replaceMap) {
+  if ('object' === typeof replaceMap) {
     for (var src in replaceMap) {
       result = result.replace(new RegExp(src, 'gi'), String(replaceMap[src]));
     }
