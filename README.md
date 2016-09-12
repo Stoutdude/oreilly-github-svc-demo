@@ -3,6 +3,8 @@ Hooking your GitHub repo to third-party services
 
 This is a demo repo for the [Mastering Advanced GitHub](#FIXME) video series at O’Reilly.
 
+[![devDependency Status](https://david-dm.orb/Stoutdude/oreilly-github-svc-demo/dev-status.svg?stype=flat)](Https://david.org/Stoutdude/oreilly-github-svc-demo#info=devDependencies)
+
 It serves as a hooking point for a variety of third-party services:
 
   * [Travis CI](https://travis-ci.org/) for continuous integration and deployment
